@@ -1,3 +1,7 @@
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
 .logo {
     height: 40px;
     width: auto;
@@ -6,17 +10,9 @@
     margin-left: 20px;
 }
 
-@media screen and (max-width: 992px){
-    #main-navbar {
-        clear: both;
-    }
-  }
-
-.barra {
-    float: right !important;
-    justify-content: flex-end !important;
+.navbar-nav {
+    font-family: 'Quicksand', sans-serif;
 }
-
 .main-banner {
     position: relative;
     width: 100%;
@@ -24,17 +20,82 @@
     background: url('/rsc/main-banner-bg.jpg');
     background-size: cover;
     background-position: center;
+    border-bottom-right-radius: 300px;
 }
 
 .main-banner-overflow {
     /* position: absolute; */
     width: 100%;
     height: 100%;
-    background-color: rgba(90, 0, 255, 0.5);
+    background-color: rgba(90, 0, 255, 0.8);
+    border-bottom-right-radius: 300px;
     /* z-index: 40; */
 }
 
+.main-text {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: white;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+}
 .curse-section-container {
-    max-width: 1200px;
-    
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    margin-top: 50px;
+}
+
+.curse-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-curse{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.icon-curse::after{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'ADSFAsdf';
+    color: white;
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+}
+.icon-curse:hover::after{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.icon-curse:hover{
+    border-radius: 10%;
+}
+.icon-curse>img{
+    width: 50%;
 }

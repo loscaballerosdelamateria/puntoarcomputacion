@@ -1,5 +1,5 @@
 body {
-    background: url('/rsc/body-background.jpg');
+    background: url('/rsc/body-backgroundd.jpg');
     background-size: cover;
 }
 h1 {
@@ -106,3 +106,4 @@ h1 {
 .icon-curse>img{
     width: 50%;
 }
+

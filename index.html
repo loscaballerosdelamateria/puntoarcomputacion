@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PuntoAR</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <title>Capacitate en Tecnología con PUNTOAR</title>
 
   <!-- FUENTES -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
   <!-- ESTILOS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -19,9 +23,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-      <img class="logo" src="rsc/LogoPuntoAr-04-04.svg" alt="">
+      <img class="logo" src="rsc/logopuntoar-ligth.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,24 +34,29 @@
 
     <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cursos<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contactoo0000</a>
-        </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#cursos">Cursos<span class="sr-only">(current)</span></a>
         </li> -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Cursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Operador de PC</a>
+              <a class="dropdown-item" href="#">Office</a>
+              <a class="dropdown-item" href="#">Reparador de PC</a>
+              <a class="dropdown-item" href="#">Diseño WEB</a>
+              <a class="dropdown-item" href="#">Programación</a>
+              <a class="dropdown-item" href="#">Herramientas de Diseño</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contacto</a>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="#">¿Quienes somos?</a>
         </li>
@@ -56,28 +65,44 @@
     </div>
   </nav>
   <section class="main-banner">
-    <div class="main-banner-overflow"></div>
+    <!-- <div class="video-wrap">
+      <video class="banner-video" muted="muted" autoplay="autoplay" loop="loop">
+        <source src="/rsc/MVI_1012.webm" type="video/webm">
+      </video>
+    </div> -->
+    <!-- <div class="main-banner-overflow"></div> -->
     <div class="main-text">
-      <h1>Dominá la tecnología en PUNTOAR</h1>
+      <h1>Domina la tecnología en PUNTOAR</h1>
+      <div class="span-banner p1">
+        <cite>Curso Operador de PC</cite>
+        <span>Domina <strong>Windows</strong> y <strong>Office</strong></span>
+      </div>
+      <span class="span-banner p2">Diseña una <strong>Página Web</strong></span>
+      <span class="span-banner p3"><strong>Codifica</strong> tu primer programa</span>
+      <span class="span-banner p4">Diseña <strong>Logos</strong> y realiza <strong>Fotomontajes</strong></span>
+      <span class="span-banner p5">
+        Crea <strong>Hojas de cálculo</strong> avanzas con <strong>Excel</strong>
+        <cite>Excel Avanzado</cite>
+      </span>
     </div>
   </section>
 
   <main>
-    <section class="cursos">
-      <h2>¿Qué podés aprender en PuntoAR?</h2>
+    <section class="cursos" id="cursos">
+      <h2>¿Qué podés aprender en PUNTO AR?</h2>
       <div class="curse-section-container">
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-aqua op-curse">
             <div class="icon-overflow"></div>
             <img src="/rsc/icons/operadorpc-icon.svg" alt="">
           </div>
           <h3>Operador de PC</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero enim corporis numquam, dolor ut natus
-            perferendis, consectetur esse, fuga consequatur ullam officiis sunt quae tempora quidem at sapiente debitis
-            vel.</p>
+          <p>El curso tiene como objetivo el aprendizaje del entorno básico del sistema operativo Windows,
+            explicando los conceptos fundamentales y sus características básicas de funcionamiento,
+            y viendo algunas de las aplicaciones que incorpora.</p>
         </article>
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-orange of-curse">
             <img src="/rsc/icons/office-icon.svg" alt="">
           </div>
           <h3>Office</h3>
@@ -86,7 +111,7 @@
             vel.</p>
         </article>
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-brown rep-curse">
             <img src="/rsc/icons/reparadorpc-icon.svg" alt="">
           </div>
           <h3>Reparador de PC</h3>
@@ -95,42 +120,86 @@
             vel.</p>
         </article>
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-green web-curse">
             <img src="/rsc/icons/diseñoweb-icon.svg" alt="">
           </div>
           <h3>Diseño WEB</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero enim corporis numquam, dolor ut natus
-            perferendis, consectetur esse, fuga consequatur ullam officiis sunt quae tempora quidem at sapiente debitis
-            vel.</p>
+          <p>Aprenderás a crear la estructura de tu sitio web con HTML5. 
+            Darás diseño y estilo con CSS3.
+            Crearás sitios adaptables a celulares y tablets.
+            </p>
         </article>
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-blue pro-curse">
             <img src="/rsc/icons/programacion-icon.svg" alt="">
           </div>
           <h3>Programación</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero enim corporis numquam, dolor ut natus
-            perferendis, consectetur esse, fuga consequatur ullam officiis sunt quae tempora quidem at sapiente debitis
-            vel.</p>
+          <p>Comprende los fundamentos de programación y entiende la lógica que está detrás de cualquier 
+            lenguaje de programación </p>
         </article>
         <article class="curse-container">
-          <div class="icon-curse">
+          <div class="icon-curse color-purple dis-curse">
             <img src="/rsc/icons/diseño-icon.svg" alt="">
           </div>
           <h3>Herramientas de diseño</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero enim corporis numquam, dolor ut natus
-            perferendis, consectetur esse, fuga consequatur ullam officiis sunt quae tempora quidem at sapiente debitis
-            vel.</p>
+          <p>Domina la principales herramientas de Photoshop como de Illustrator y Corel, 
+            así como las tareas básicas para la edición de imágenes, 
+            el retoque fotográfico y la creación de imágenes vectoriales.</p>
+        </article>
+      </div>
+    </section>
+    <section class="whyus">
+      <h2>¿Por qué capacitarte en PUNTO AR?</h2>
+      <div class="featured-container">
+        <article class="featured f1">
+          <div class="feat-text-container">
+            <h3>Clases 100% prácticas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Atque omnis nulla, sint esse ipsam tempora delectus repellendus error
+            </p>
+          </div>
+          <img src="http://www.datoavisos.cl/wp-content/uploads/2017/06/CLASES-COMPUTACION-Y-CONTABILIDAD.jpg" alt="">
+        </article>
+        <article class="featured f2">
+          <div class="feat-text-container">
+            <h3>Aprendé a tu ritmo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Atque omnis nulla, sint esse ipsam tempora delectus repellendus error
+            </p>
+          </div>
+          <img src="http://www.datoavisos.cl/wp-content/uploads/2017/06/CLASES-COMPUTACION-Y-CONTABILIDAD.jpg" alt="">
+        </article>
+        <article class="featured f3">
+          <div class="feat-text-container">
+            <h3>Ambiente cómodo y relajado</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Atque omnis nulla, sint esse ipsam tempora delectus repellendus error
+            </p>
+          </div>
+          <img src="http://www.datoavisos.cl/wp-content/uploads/2017/06/CLASES-COMPUTACION-Y-CONTABILIDAD.jpg" alt="">
+        </article>
+        <article class="featured f4">
+          <div class="feat-text-container">
+            <h3>Un alumno por PC</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Atque omnis nulla, sint esse ipsam tempora delectus repellendus error
+            </p>
+          </div>
+          <img src="http://www.datoavisos.cl/wp-content/uploads/2017/06/CLASES-COMPUTACION-Y-CONTABILIDAD.jpg" alt="">
         </article>
       </div>
     </section>
   </main>
+  <footer class="main-footer" id="footer"></footer>
 
+  <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

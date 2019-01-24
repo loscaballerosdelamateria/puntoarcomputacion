@@ -1,10 +1,74 @@
-body {
-    background: url('/rsc/body-background.jpg');
-    background-size: cover;
+:root {
+    /* COLORS */
+    --color-logo: #312F77;
+    --color-aqua: #176D8E;
+    --color-green: #02E86D;
+    --color-brown: #942121;
+    --color-orange: #EB3C00;
+    --color-purple: #7D009B;
+    --color-blue: #006DF0;
+    /* Z-INDEX */
+    --z-header: 30;
+    --z-modal: 40;
+    /* FUENTES     */
+
 }
+* {
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: url('/rsc/connect2.png'); */
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: 0,0;
+    font-family: 'Roboto', sans-serif;
+
+} 
 h1 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
     font-weight: bold;
+}
+h2 {
+    color: black;
+    position: relative;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+    /* h2::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: currentColor;
+        border-radius: 50%;
+        top: 50px;
+        right: 48.5%;
+    }
+    h2::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 1000px;
+        background-color: currentColor;
+        top: 50px;
+        right: 50%;
+    } */
+h3 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 0.8em;
+}
+cite {
+    display: block;
+    font-size: 0.5em;
 }
 .logo {
     height: 40px;
@@ -13,18 +77,49 @@ h1 {
     margin-right: 20px;
     margin-left: 20px;
 }
-
+.bg-dark {
+    background-color: var(--color-logo) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
 .navbar-nav {
     font-family: 'Quicksand', sans-serif;
 }
+
 .main-banner {
     position: relative;
     width: 100%;
-    height: 80vh;
-    background: url('/rsc/main-banner-bg.jpg');
+    height: 90vh;
+    /* border-bottom-right-radius: 300px; */
+    overflow: hidden;
+    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */
+    background: url('/rsc/background1.jpg');
     background-size: cover;
-    background-position: center;
-    border-bottom-right-radius: 300px;
+}
+/* .main-banner::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+  } */
+/* .video-wrap {
+    width: 100%;
+    height: 100%;
+} */
+
+.banner-video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    overflow: hidden;
 }
 
 .main-banner-overflow {
@@ -40,69 +135,211 @@ h1 {
     position: absolute;
     top: 45%;
     left: 5%;
-    color: white;
+    color: var(--color-logo);
+    z-index: 40;
+    /* text-shadow: 0 0 20px rgba(11, 11, 11, .55); */
+
 }
 
+.span-banner {
+    position: absolute;
+    padding-top:10px;
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    /* font-style: italic; */
+    opacity: 0;
+    text-shadow: 0 0 35px rgba(11, 11, 11, .55);
+
+}
+
+.p1 {animation: fadeInUp 20s 0s infinite;}
+.p2 {animation: fadeInUp 20s 4s infinite;}
+.p3 {animation: fadeInUp 20s 8s infinite;}
+.p4 {animation: fadeInUp 20s 12s infinite;}
+.p5 {animation: fadeInUp 20s 16s infinite;}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+    5% {
+        transform: none;
+        opacity: 1;
+    }
+    15% {
+        transform: none;
+        opacity: 1;
+    }
+    
+    20% {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+}
+
+/* CURSES SECTION */
 .cursos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8%;
-    color: aliceblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* text-shadow: 1px 1px 1px black; */
 }
+
 .curse-section-container {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10%;
+    grid-gap: 5%;
     margin-top: 50px;
 }
 
 .curse-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
+    /* display: flex; */
     text-align: center;
-    color: aliceblue;
+    color: black;
 }
 .icon-curse{
     position: relative;
-    width: 150px;
-    height: 150px;
-    border: 2px solid red;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
     cursor: pointer;
+    transition: all ease 0.3s;
+    margin-bottom: 30px;
+}
+.op-curse {
+    color: var(--color-aqua);
+    box-shadow: 0px 0px 1px -41px var(--color-aqua),
+                0px 0px 1px -41px var(--color-aqua),
+                0px 0px 1px -41px var(--color-aqua);
+}
+.of-curse {
+    color: var(--color-orange);
+    box-shadow: 0px 0px 1px -41px var(--color-orange),
+                0px 0px 1px -41px var(--color-orange),
+                0px 0px 1px -41px var(--color-orange);
+}
+.rep-curse {
+    color: var(--color-brown);
+    box-shadow: 0px 0px 1px -41px var(--color-brown),
+                0px 0px 1px -41px var(--color-brown),
+                0px 0px 1px -41px var(--color-brown);
+}
+.web-curse {
+    color: var(--color-green);
+    box-shadow: 0px 0px 1px -41px var(--color-green),
+                0px 0px 1px -41px var(--color-green),
+                0px 0px 1px -41px var(--color-green);
+}
+.pro-curse {
+    color: var(--color-blue);
+    box-shadow: 0px 0px 1px -41px var(--color-blue),
+                0px 0px 1px -41px var(--color-blue),
+                0px 0px 1px -41px var(--color-blue);
+}
+.dis-curse {
+    color: var(--color-purple);
+    box-shadow: 0px 0px 1px -41px var(--color-purple),
+                0px 0px 1px -41px var(--color-purple),
+                0px 0px 1px -41px var(--color-purple);
+}
+.icon-curse:hover{
+    box-shadow: 65px 20px 1px -41px currentColor, 
+                0px -67px 1px -41px currentColor,
+                -69px -3px 1px -41px currentColor;
 }
 .icon-curse::after{
+    content: 'Más Info';
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    content: 'ADSFAsdf';
-    color: white;
+    color: currentColor;
     opacity: 0;
-    width: 50%;
-    height: 50%;
-    border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: all 0.5s ease;
+    top: 50%;
+    font-size: 0.7em;
+    transition: all 0.3s ease;
 }
 .icon-curse:hover::after{
     opacity: 1;
-    width: 100%;
-    height: 100%;
-}
-.icon-curse:hover{
-    border-radius: 10%;
+    top:110%;
 }
 .icon-curse>img{
     width: 50%;
+
 }
+
+/* WHYUS SECTION */
+.whyus {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #282D31;
+    color: white;
+    /* text-shadow: 1px 1px 1px black; */
+}
+    .whyus h2{
+        color: white;
+    }
+.featured-container {
+    width: 70%;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.f2, .f4 {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.feat-text-container{
+    width: 30%;
+}
+.featured img {
+    opacity: 0;
+    width: 300px;
+    border-radius: 10%;
+}
+
+/* FOOTER SECTION */
+.main-footer {
+    height: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-logo);
+    color: white;
+    font-size: 1em;
+}
+
+
+/* COLOR CLASS */
+.color-logo{background-color: var(--color-logo);}
+.color-aqua{border-color: var(--color-aqua);}
+.color-green{border-color: var(--color-green)}
+.color-brown{border-color: var(--color-brown)}
+.color-orange{border-color: var(--color-orange)}
+.color-purple{border-color: var(--color-purple)}
+.color-blue{border-color: var(--color-blue)}

@@ -51,6 +51,18 @@ padding: 1%;
 
 }
 
+.recuadro{
+
+
+    width: 300px;
+    height:400px;
+    background-color: red;
+    grid-column: 4;
+    position: fixed;
+    right: 9.3%;
+    top: 33%;
+}
+
 .profesor{
     width: 220px;
     height: 220px;
@@ -63,6 +75,8 @@ padding: 1%;
     top: 37%;
     border-radius: 50%;
 }
+
+
 
 .titProfe{
     width: 220px;

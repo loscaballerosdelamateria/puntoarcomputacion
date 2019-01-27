@@ -5,7 +5,7 @@
     background-color: rgb(27, 99, 206);
     width: 100%;
     height: 100%;
-    color: antiquewhite;
+    color: rgb(253, 251, 249);
     
     
     
@@ -38,10 +38,11 @@
     padding: 2%;
     width: 100%;
     height: 100%;
+}
+    
 
 
-
-  }
+  
 
 
 .arriba{
@@ -62,6 +63,8 @@ padding: 1%;
     right: 9.3%;
     top: 33%;
 }
+
+
 
 .profesor{
     width: 220px;
